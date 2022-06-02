@@ -22,7 +22,11 @@
           <div class="youtube__list">
             <ul>
               <li v-for="youtube in youtubes" :key="youtube.id.videoId">
-                <a href="" target="_blank" rel="noreferrer">
+                <a
+                  :href="`https://www.youtube.com/watch?v=${youtube.id.videoId}`"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     :src="youtube.snippet.thumbnails.medium.url"
                     :alt="youtube.snippet.title"

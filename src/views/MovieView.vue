@@ -47,10 +47,15 @@
           <div class="movie__list">
             <ul>
               <li v-for="movie in movies" :key="movie.id">
-                <img
-                  :src="`https://image.tmdb.org/t/p/w500` + movie.poster_path"
-                  :alt="movie.title"
-                />
+                <a
+                  target="_blank"
+                  :href="`https://www.themoviedb.org/movie/${movie.id}?language=ko`"
+                >
+                  <img
+                    :src="`https://image.tmdb.org/t/p/w500` + movie.poster_path"
+                    :alt="movie.title"
+                  />
+                </a>
                 <p>{{ movie.title }}</p>
               </li>
             </ul>
