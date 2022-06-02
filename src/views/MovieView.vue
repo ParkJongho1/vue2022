@@ -140,7 +140,7 @@ export default {
 
 <style lang="scss">
 .movie__top {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   .num {
     font-size: 8vw;
     line-height: 1;
